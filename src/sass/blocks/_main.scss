@@ -1,0 +1,19 @@
+.main {
+    min-height: 100vh;
+    background: url('../../img/bg/main-screen-bg.jpg') center (center/cover) no-repeat;
+    padding-top: 24px;
+    &__text {
+        padding: 90px 0 200px 0;
+        width: 616px;
+    }
+    &__subtitle {
+        padding-top: 24px;
+    }
+    &__link {
+        padding-top: 45px;
+        text-decoration: underline;
+        a {
+            color: #FFD723;
+        }
+    }
+}

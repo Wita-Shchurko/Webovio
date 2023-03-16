@@ -1,0 +1,25 @@
+.title {
+    &_big {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 74px;
+        span {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.link {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFD723;
+}
