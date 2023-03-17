@@ -1,0 +1,50 @@
+.whatWeDo {
+    color: $textColor;
+    padding-top: 244px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__block {
+        width: 474px;
+        &:nth-child(2) {
+            padding: 0 40px;
+        }
+    }
+    &__chapter {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__title {
+        padding-top: 29px;
+    }
+    &__subtitle {
+        padding-top: 35px;
+    }
+    &__blockquote {
+        font-style: italic;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 40px;
+    }
+    &__founder {
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        &-img {
+            padding-right: 30px;
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 33px;
+        }
+        &-position {
+            padding-top: 6px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

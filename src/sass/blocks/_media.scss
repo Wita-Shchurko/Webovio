@@ -32,6 +32,25 @@
             width: 428px;
         }
     }
+    .whatWeDo {
+        padding-top: 150px;
+        &__block {
+            width: 370px;
+        }
+        &__blockquote {
+            font-size: 16px;
+            line-height: 38px;
+        }
+        &__founder {
+            &-name {
+            font-size: 15px;
+            line-height: 28px;
+            }
+            &-position {
+                font-size: 13px;
+            }
+        }
+    }
     
 }
 
@@ -51,7 +70,28 @@
             width: 345px;
         }
     }
-    
+    .whatWeDo {
+        .container {
+            flex-direction: column;
+        }
+        &__block {
+            width: 100%;
+            &:nth-child(2) {
+                padding: 0 90px;
+            }
+        }
+        &__title {
+            font-size: 40px;
+        }
+        &__blockquote {
+            padding-top: 45px;
+            font-size: 16px;
+            line-height: 29px;
+        }
+        &__founder {
+            padding-top: 3px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -78,5 +118,26 @@
             width: 300px;
         }
     }
-    
+    .whatWeDo {
+        padding-top: 100px;
+        &__block {
+            &:nth-child(2) {
+                padding: 0 17px;
+            }
+        }
+        &__title {
+            font-size: 36px;
+        }
+        &__founder {
+            &-name {
+            font-size: 14px;
+            }
+            &-img {
+                padding-right: 14px;
+            }
+            &-position {
+                font-size: 13px;
+            }
+        }
+    }
 }

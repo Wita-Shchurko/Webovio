@@ -6,10 +6,18 @@
         padding: 90px 0 200px 0;
         width: 616px;
     }
+    &__title {
+        color: #ffffff;
+        span {
+            color: #ffffff;
+        }
+    }
     &__subtitle {
         padding-top: 24px;
+        color: #ffffff;
     }
     &__link {
+        
         padding-top: 45px;
         text-decoration: underline;
         a {
