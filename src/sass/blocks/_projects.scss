@@ -1,0 +1,89 @@
+.projects {
+    overflow: hidden;
+    padding: 150px 10px 0 10px;
+    &__title-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__title {
+        width: 331px;
+    }
+    &__subtitle {
+        width: 518px;
+    }
+    &__wrapper {
+        padding-top: 190px;
+        display: flex;
+        justify-content: space-between;
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
+            .projects__founder {
+                margin-left: 0;
+                margin-right: 160px;
+                &-bg {
+                    right: -322px;
+                }
+            }
+        }
+        &:last-child {
+            margin-bottom: 150px;
+        }
+    }
+    &__founder {
+        position: relative;
+        width: 453px;
+        margin-top: 298px;
+        margin-left: 160px;
+        &-wrapper {
+            background: #FFFFFF;
+            padding: 30px;
+            border-radius: 8px;
+            z-index: 1;
+            box-shadow: 50px 50px 100px rgba($shadowColor, 0.5);
+        }
+        &-bg {
+            width: 735px;
+            position: absolute;
+            top: -372px;
+            right: 40px;
+            z-index: -1;
+        }
+        &-blockquote {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 25px;
+        }
+        &-person {
+            display: flex;
+        }
+        &-img {
+            width: 46px;
+            height: 46px;
+            margin-right: 30px;
+            border-radius: 100%;
+            box-shadow: 20px 25px 43px rgba($shadowColor, 0.5);
+        }
+        &-name {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        }
+        &-position {
+            padding-top: 4px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+    &__block {
+        width: 429px;
+        &-subtitle {
+            width: 100%;
+            padding-top: 24px;
+        }
+        &-link {
+            padding-top: 90px;
+        }
+    }
+}
