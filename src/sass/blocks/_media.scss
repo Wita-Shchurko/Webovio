@@ -34,6 +34,11 @@
             }
         }
     }
+    .ideation {
+        &__card {
+            padding: 20px;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -80,12 +85,8 @@
         }
     }
     .projects {
-        &__title {
-            font-size: 31px;
-        }
         &__subtitle {
-            width: 398px;
-            font-size: 15px;
+            width: 375px;
         }
         &__wrapper {
             padding-top: 150px;
@@ -124,15 +125,16 @@
         }
         &__block {
             width: 340px;
-            &-title {
-                font-size: 34px;
-                line-height: 44px;
-            }
-            &-subtitle {
-                font-size: 15px;
-            }
             &-link {
                 padding-top: 45px;
+            }
+        }
+    }
+    .ideation {
+        &__card {
+        padding: 13px;
+            &-title {
+                font-size: 23px;
             }
         }
     }
@@ -166,10 +168,10 @@
             }
         }
         &__title {
-            font-size: 40px;
             span {
                 &::before {
-                    left: -522px;
+                    left: 0;
+                    top: 8px;
                 }
             }
         }
@@ -189,12 +191,11 @@
         &__title {
             width: 100%;
             text-align: center;
-            font-size: 29px;
+            // font-size: 29px;
         }
         &__subtitle {
             width: 100%;
             padding-top: 15px;
-            font-size: 14px;
         }
         &__wrapper {
             padding-top: 100px;
@@ -224,6 +225,24 @@
             }
         }
     }
+    .ideation {
+        &__wrapper {
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+        }
+        &__card {
+            padding: 30px;
+            &:hover {
+                box-shadow: none;
+            }
+            &-link {
+                a {
+                    &:hover {
+                        color: $shadowColor;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -238,6 +257,8 @@
         }
     }
     .title {
+        font-size: 28px;
+        line-height: 40px;
         &_big{
             font-size: 32px;
             line-height: 52px;
@@ -261,10 +282,10 @@
             }
         }
         &__title {
-            font-size: 36px;
             span {
                 &::before {
                     left: -300px;
+                    top: 55px;
                 }
             }
         }
@@ -280,9 +301,7 @@
     .projects {
         padding-top: 100px;
         &__wrapper {
-            
             &:nth-child(odd) {
-                
                 .projects__founder {
                     margin-left: 0;
                     &-bg {
@@ -295,10 +314,6 @@
         }
         &__block {
             width: 100%;
-            &-title {
-                font-size: 32px;
-                line-height: 44px;
-            }
         }
         &__founder {
             width: 100%;
@@ -312,6 +327,11 @@
                 padding: 10px;
                 background: rgba(#fff, 0.75)
             }
+        }
+    }
+    .ideation {
+        &__wrapper {
+            grid-template: repeat(4, 1fr) / 1fr;
         }
     }
 }

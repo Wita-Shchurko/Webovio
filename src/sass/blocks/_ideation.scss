@@ -1,0 +1,46 @@
+.ideation {
+    padding: 150px 0;
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 46px;
+        max-width: 607px;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: 1fr / repeat(4, 1fr);
+    }
+    &__card {
+        position: relative;
+        padding: 30px;
+        transition: all 0.4s;
+        &-title {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 34px;
+        }
+        &-subtitle {
+            padding-top: 20px;
+            padding-bottom: 70px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 26px;
+        }
+        &-link {
+            position: absolute;
+            bottom: 36px;
+            a {
+                transition: all 0.4s;
+                &:hover {
+                    color: #FFD723;
+                    transition: all 0.4s;
+                }
+            }
+        }
+        &:hover {
+            transition: all 0.4s;
+            box-shadow: 50px 50px 100px rgba($shadowColor, 0.5)
+        }
+    }
+}
