@@ -1,0 +1,34 @@
+.banner {
+    position: absolute;
+    width: calc(100vw - ((100vw - 1110px) / 2));
+    height: 227px;
+    z-index: 5;
+    background: #FAFAFA;
+    right: 0;
+    bottom: -113px;
+    box-shadow: 6px 6px 29px rgba($shadowColor, 0.5);
+    &_left {
+        left: 0;
+    }
+    &__text {
+        font-weight: 700;
+        padding-top: 30px;
+        font-size: 60px;
+        line-height: 74px;
+        padding-left: calc((100vw - 1110px) / 2);
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        padding: 59px calc((100vw - 1110px) / 2) 0 65px;
+    }
+    &__icon {
+        width: 156px;
+        height: 113px;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

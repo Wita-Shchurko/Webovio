@@ -39,6 +39,25 @@
             padding: 20px;
         }
     }
+    .footer {
+        padding-top: 250px;
+    }
+    .banner {
+        width: calc(100vw - ((100vw - 960px) / 2));
+        height: 227px;
+        height: 165px;
+        bottom: -81px;
+        &__icons {
+            padding: 30px calc((100vw - 960px)/ 2) 0 50px;
+        }
+        &__text {
+            padding-top: 20px;
+            font-size: 48px;
+            line-height: 60px;
+            padding-left: calc((100vw - 960px)/ 2);
+        }
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -136,6 +155,43 @@
             &-title {
                 font-size: 23px;
             }
+        }
+    }
+    .footer {
+        padding-top: 200px;
+        &__navigation {
+            &-block {
+                ul {
+                    li {
+                        font-size: 12px;
+                        line-height: 30px;
+                    }
+                }
+            }
+            li {
+                font-size: 12px;
+                line-height: 30px;
+            }
+            &-title {
+                font-size: 14px;
+            }
+        }
+    }
+    .banner {
+        width: calc(100vw - ((100vw - 740px) / 2));
+        height: 128px;
+        bottom: -63px;
+        &__icons {
+            padding: 30px calc((100vw - 740px)/ 2) 0 50px;
+        }
+        &__icon {
+            width: calc(156px - 7%);
+            height: calc(113px - 7%);
+        }
+        &__text {
+            font-size: 37px;
+            line-height: 41px;
+            padding-left: calc((100vw - 740px)/ 2);
         }
     }
 }
@@ -243,6 +299,55 @@
             }
         }
     }
+    .footer {
+        &__navigation {
+            &-block {
+                &:last-child {
+                    width: 208px;
+                }
+            }
+            &-email {
+                font-size: 14px;
+            }
+            &__contacts {
+                &-value {
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            &__navigation {
+                &-icons {
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                &-circle {
+                    &:hover {
+                        background: #444A34;
+                    }
+                }
+            }
+        }
+    }
+    .banner {
+        width: calc(100vw - ((100vw - 560px) / 2));
+        height: 105px;
+        bottom: -50px;
+        &__icons {
+            padding: 20px calc((100vw - 560px)/ 2) 0 40px;
+        }
+        &__icon {
+            width: calc(156px - 13%);
+            height: calc(113px - 13%);
+        }
+        &__text {
+            font-size: 33px;
+            line-height: 37px;
+            padding-left: calc((100vw - 560px)/ 2);
+            padding-top: 12px;
+        }
+    }
 }
 
 @media (max-width: 575px) {
@@ -332,6 +437,56 @@
     .ideation {
         &__wrapper {
             grid-template: repeat(4, 1fr) / 1fr;
+        }
+    }
+    .footer {
+        padding-top: 100px;
+        &__navigation {
+            flex-wrap: wrap;
+            margin-top: 42px;
+            &-title {
+                font-size: 12px;
+            }
+            &-block {
+                &:last-child {
+                    width: 100%;
+                }
+                ul {
+                    li {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
+        &__contacts {
+            width: 100%;
+            &-value {
+                font-weight: 500;
+                font-size: 12px;
+                line-height: 22px;
+            }
+        }
+        &__copyright {
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+    .banner {
+        width: 100%;
+        height: 58px;
+        bottom: -30px;
+        &__icons {
+            padding: 7px;
+        }
+        &__icon {
+            width: calc(156px - 33%);
+            height: calc(113px - 33%);
+        }
+        &__text {
+            font-size: 20px;
+            line-height: 23px;
+            padding-left: calc((100vw - 300px)/ 2);
+            padding-top: 5px;
         }
     }
 }
