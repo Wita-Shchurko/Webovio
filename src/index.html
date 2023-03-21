@@ -29,20 +29,33 @@
 <body>
     <section class="main">
         <div class="container">
-            <header class="header">
+            <header role="banner" class="header">
                 <div class="header__logo"><img src="icons/Logo.png" alt="Webovio logo"></div>
-                <div class="header__hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <div class="overlay">
+                    <div class="header__hamburger open-overlay">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="overlay-navigation inactiveMenu">
+                        <nav role="navigation">
+                            <ul id="parent">
+                                <li><a role="link" href="#WhatWeDo">What we do</a></li>
+                                <li><a role="link" href="#Projects">Projects</a></li>
+                                <li><a role="link" href="#Ideation">Ideation</a></li>
+                                <li><a role="link" href="#Contacts">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
+
             </header>
 
             <div class="main__text">
                 <h1 class="title_big main__title"><span>A place where</span> </br>
                     A creative agency for redemptive brands</h1>
                 <h3 class="subtitle main__subtitle">Anteelo is a leading strategic design firm that builds powerful digital solutions for startups and enterprises.</h3>
-                <div class="link main__link"><a href="#">Get in touch</a></div>
+                <div class="link main__link"><a role="link" href="#">Get in touch</a></div>
                 
             </div>
         </div>
@@ -58,13 +71,13 @@
     </section>
 
 
-    <section class="whatWeDo">
+    <section class="whatWeDo" id="WhatWeDo">
         <div class="container">
             <div class="whatWeDo__block">
-                <span class="whatWeDo__chapter">What we do for you</span>
+                <span role="heading" class="whatWeDo__chapter">What we do for you</span>
                 <h2 class="title whatWeDo__title">Strategy. Design  Content.<span> Technology </span>Development</h2>
                 <p class="subtitle whatWeDo__subtitle">There’s no secret sauce, no wizard behind the curtain. What makes Aerolab tick is an interdisciplinary team with a framework that fosters candid collaboration.</p>
-                <div class="link whatWeDo__link"><a href="#">  More know About us</a></div>
+                <div class="link whatWeDo__link"><a role="link" href="#">  More know About us</a></div>
             </div>
 
             <div class="whatWeDo__block">
@@ -81,13 +94,13 @@
     </section>
 
     <div class="container">
-        <hr>
+        <hr role="separator">
     </div>
 
-    <section class="projects">
+    <section class="projects" id="Projects">
         <div class="container">
             <div class="projects__title-wrapper">
-                <h2 class="title projects__title">We Have Some Awesome Project.</h2>
+                <h2 role="heading" class="title projects__title">We Have Some Awesome Project.</h2>
                 <p class="subtitle projects__subtitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
             </div>
 
@@ -110,7 +123,7 @@
                     <p class="subtitle projects__block-subtitle">This article is floated online with an aim   to help you find the best dvd printing solution.
                     </br> </br>
                         Dvd printing is an important feature used by large and small DVD production houses to print information on DVDs.</p>
-                    <div class="link projects__block-link"><a href="#">See Case Study</a></div>
+                    <div class="link projects__block-link"><a role="link" href="#">See Case Study</a></div>
                 </div>
             </div>
 
@@ -135,7 +148,7 @@
                     <p class="subtitle projects__block-subtitle">While it was just a TV show, that little speech at the beginning of the original Star Trek show really did do a good job of capturing our feelings about space.
                     </br> </br>
                     It is those feelings that drive our love of astronomy and our desire to learn more and more about it. </p>
-                    <div class="link projects__block-link"><a href="#">See Case Study</a></div>
+                    <div class="link projects__block-link"><a role="link" href="#">See Case Study</a></div>
                 </div>
             </div>
 
@@ -161,46 +174,46 @@
                     <p class="subtitle projects__block-subtitle">You should be able to find several indispensable facts about motivation in the following paragraphs. 
                     </br> </br>
                     If there’s at least one fact you didn’t know before, imagine the difference it might make.</p>
-                    <div class="link projects__block-link"><a href="#">See Case Study</a></div>
+                    <div class="link projects__block-link"><a role="link" href="#">See Case Study</a></div>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="container">
-        <hr>
+        <hr role="separator">
     </div>
 
-    <section class="ideation">
+    <section class="ideation" id="Ideation">
         <div class="container">
-            <div class="title ideation__title">
+            <div role="heading" class="title ideation__title">
                 Ideation & Evaluation - Best Way to Kick off Your Product Idea
             </div>
             <div class="ideation__wrapper">
                 <div class="ideation__card">
                     <div class="ideation__card-title">Product Design Sprint</div>
                     <div class="ideation__card-subtitle">A five-day workshop that will help you answer crucial business questions</div>
-                    <div class="link ideation__card-link"><a href="#">Read More</a> </div>
+                    <div class="link ideation__card-link"><a role="link" href="#">Read More</a> </div>
                 </div>
 
                 <div class="ideation__card">
                     <div class="ideation__card-title">Scoping </br> Session</div>
                     <div class="ideation__card-subtitle">A workshop aimed at shaping your business idea, answering questions regarding project planning</div>
-                    <div class="link ideation__card-link"><a href="#">Read More</a> </div>
+                    <div class="link ideation__card-link"><a role="link" href="#">Read More</a> </div>
                 </div>
 
                 <div class="ideation__card">
                     <div class="ideation__card-title">UX </br>
                         Review</div>
                     <div class="ideation__card-subtitle">An evaluation which will help you radically improve your product.</div>
-                    <div class="link ideation__card-link"><a href="#"> Read More</a></div>
+                    <div class="link ideation__card-link"><a role="link" href="#"> Read More</a></div>
                 </div>
 
                 <div class="ideation__card">
                     <div class="ideation__card-title">Code </br> Review</div>
                     <div class="ideation__card-subtitle">Do you know what one of the key secrets of success 
                         is what makes people successful in business</div>
-                    <div class="link ideation__card-link"><a href="#">Read More</a> </div>
+                    <div class="link ideation__card-link"><a role="link" href="#">Read More</a> </div>
                 </div>
             </div>
         </div>
@@ -210,7 +223,7 @@
     </section>
 
 
-    <footer class="footer">
+    <footer role="contentinfo" class="footer" id="Contacts">
         <div class="container">
             <div class="footer__contacts">
                 <div class="footer__phone">
@@ -228,7 +241,7 @@
             </div>
 
             <div class="footer__navigation">
-                <div class="footer__navigation-block">
+                <div role="directory" class="footer__navigation-block">
                     <div class="footer__navigation-title">Services</div>
                     <ul>
                         <li>Strategy Design</li>
@@ -239,7 +252,7 @@
                     </ul>
                 </div>
 
-                <div class="footer__navigation-block">
+                <div role="directory" class="footer__navigation-block">
                     <div class="footer__navigation-title">Help And Advice</div>
                     <ul>
                         <li>How it works</li>
@@ -249,7 +262,7 @@
                     </ul>
                 </div>
 
-                <div class="footer__navigation-block">
+                <div role="directory" class="footer__navigation-block">
                     <div class="footer__navigation-title">Company</div>
                     <ul>
                         <li>About</li>
@@ -266,10 +279,10 @@
                     <div class="footer__navigation-subtitle">Feel free to get in touch with us vai email</div>
                     <div class="footer__navigation-email">info.webovio@gmail.com</div>
                     <div class="footer__navigation-icons">
-                        <a href="#" class="footer__navigation-circle"><span class="icon-facebook"></span></a>
-                        <a href="#" class="footer__navigation-circle"><span class="icon-telegram"></span></a>
-                        <a href="#" class="footer__navigation-circle"><span class="icon-twitter"></span></a>
-                        <a href="#" class="footer__navigation-circle"><span class="icon-linkedin"></span></a>
+                        <a role="link" href="#" class="footer__navigation-circle"><span class="icon-facebook"></span></a>
+                        <a role="link" href="#" class="footer__navigation-circle"><span class="icon-telegram"></span></a>
+                        <a role="link" href="#" class="footer__navigation-circle"><span class="icon-twitter"></span></a>
+                        <a role="link" href="#" class="footer__navigation-circle"><span class="icon-linkedin"></span></a>
                     </div>
                 </div>
             </div>

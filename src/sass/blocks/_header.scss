@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    
     justify-content: space-between;
     &__logo {
         width: 258px;
@@ -10,11 +11,18 @@
         }
     }
     &__hamburger {
+        right: 0;
+        top: 0;
+        position: absolute;
+        z-index: 100;
         width: 40px;
         height: 40px;
         background-color: #F5F6F7;
         border-radius: 100%;
         padding-top: 13px;
+        &:hover {
+            cursor: pointer;
+        }
         span {
             display: block;
             width: 20px;
