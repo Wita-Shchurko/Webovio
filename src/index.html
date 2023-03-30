@@ -298,13 +298,13 @@
         </div>
     </footer>
 
-    <div id="popup" class="popup" style="display: none">
+    <div id="popup" class="popup form" style="display: none">
         <div class="popup__content">
             <div class="popup__close">
                 <span class="popup__close-left"></span>
                 <span class="popup__close-right"></span>
             </div>
-            <div class="title popup__title">Get in touch</div>
+            <div class="title form__title">Get in touch</div>
             <form action="#" class="popup__form">
                 <input required placeholder="Name" name="name" type="text"></input>
                 <input required placeholder="Email" name="email"></input>
@@ -323,7 +323,18 @@
             </form>
         </div>
     </div>
-    <section class="modal"></section>
+
+    <div id="thanks" class="popup thanks" style="display: none">
+        <div class="popup__content">
+            <div class="popup__close">
+                <span class="popup__close-left"></span>
+                <span class="popup__close-right"></span>
+            </div>
+            <div class="title thanks__title">Thank you.</div>
+            <hr>
+            <div class="subtitle thanks__subtitle">We'll be in touch. </br> Shortly!</div>
+        </div>
+    </div>
     <script src="js/script.js"></script>
 </body>
 </html> 

@@ -6,8 +6,10 @@ const ul = document.querySelector('#parent'),
       overlayNav = document.querySelector('.overlay-navigation'),
       openOverlay = document.querySelector('.open-overlay'),
       openPopup = document.querySelectorAll('.popup-opener'),
-      popup = document.querySelector('.popup'),
-      popupClose = document.querySelector('.popup__close'),
+      popupButton = document.querySelector('.popup__button'),
+      form = document.querySelector('.form'),
+      thanks = document.querySelector('.thanks'),
+      popupClose = document.querySelectorAll('.popup__close'),
       anchors = document.querySelectorAll('a[href*="#"]');
 
 openOverlay.addEventListener('click', () => {
@@ -37,15 +39,52 @@ for (let anchor of anchors) {
     })
 }
 
+const fadeIn = (el, timeout, display) => {
+    el.style.opacity = 0;
+    el.style.display = display || 'block';
+    el.style.transition = `opacity ${timeout}ms`;
+    setTimeout(() => {
+      el.style.opacity = 1;
+    }, 10);
+  };
+
+const fadeOut = (el, timeout) => {
+    el.style.opacity = 1;
+    el.style.transition = `opacity ${timeout}ms`;
+    el.style.opacity = 0;
+
+    setTimeout(() => {
+        el.style.display = 'none';
+    }, timeout);
+};
+
 for (let link of openPopup) {
     link.addEventListener('click', (e) => {
-        e.preventDefault()
+        e.preventDefault();
     
-        popup.style.display = `block`;
+        fadeIn(form, 500, 'block');
     })
 }
     
 
-popupClose.addEventListener('click', () => {
-    popup.style.display = `none`;
+for (let link of popupClose) {
+    link.addEventListener('click', () => {
+        fadeOut(form, 500, 'none');
+        fadeOut(thanks, 500, 'none');
+    })
+}
+
+popupButton.addEventListener('click', (e) => {
+    e.preventDefault();
+
+    fadeOut(form, 500, 'none');
+    fadeIn(thanks, 500, 'block');
+    setTimeout(() => {
+        thanks.style.display = `none`;
+    }, '5000')
 })
+
+
+
+
+

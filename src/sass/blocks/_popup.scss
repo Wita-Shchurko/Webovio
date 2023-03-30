@@ -37,10 +37,6 @@
             margin-top: -2px;
         }
     }
-    &__title {
-        font-size: 26px;
-        padding-bottom: 10px;
-    }
     &__form {
         width: 100%;
         input {
@@ -91,5 +87,28 @@
         img {
             width: 18px;
         }
+    }
+}
+
+.form {
+    &__title {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+}
+
+.thanks {
+    &__title {
+        padding-top: 80px;
+        font-size: 60px;
+        padding-bottom: 10px;
+    }
+    hr {
+        margin-top: 80px;
+    }
+    &__subtitle {
+        padding-top: 40px;
+        font-size: 20px;
+        padding-bottom: 10px;
     }
 }
