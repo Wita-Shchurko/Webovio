@@ -1,0 +1,95 @@
+.popup {
+    z-index: 1000000;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    &__content {
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.38);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(6.3px);
+        -webkit-backdrop-filter: blur(6.3px);
+        border-radius: 20px;
+        width: 300px;
+        min-height: 500px;
+        position: relative;
+    }
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 16px;
+        span {
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #000;
+        }
+        &-left {
+            transform: rotate(45deg);
+            margin-top: 9px;
+        }
+        &-right {
+            transform: rotate(-45deg);
+            margin-top: -2px;
+        }
+    }
+    &__title {
+        font-size: 26px;
+        padding-bottom: 10px;
+    }
+    &__form {
+        width: 100%;
+        input {
+            margin-bottom: 15px;
+            width: 100%;
+            padding: 8px;
+            font-size: 15px;
+            color: $textColor;
+            border: none;
+            border-radius: 15px;
+            background: #f3e2e2;
+        }
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            font-size: 15px;
+            color: $textColor;
+            border: none;
+            border-radius: 15px;
+            background: #f3e2e2;
+        }
+        textarea {
+            width: 100%;
+            padding: 8px;
+            height: 150px;
+            font-size: 15px;
+            color: $textColor;
+            border: none;
+            border-radius: 15px;
+            resize: none;
+            background: #f3e2e2;
+        }
+    }
+    &__send {
+        padding-top: 25px;
+        text-align: right;
+        span {
+            font-size: 18px;
+        }
+    }
+    &__button {
+        width: 40px;
+        height: 40px;
+        border: none;
+        border-radius: 100%;
+        background: #f3e2e2;
+        img {
+            width: 18px;
+        }
+    }
+}
